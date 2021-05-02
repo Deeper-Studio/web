@@ -17,6 +17,7 @@
     <div><MainSearch></MainSearch></div>
     <div><Carousel></Carousel></div>
     <div><Authors></Authors></div>
+    <div><FeaturedArticles></FeaturedArticles></div>
     <div>
       <slogan id="slogan"></slogan>
       <about id="about"></about>
@@ -35,9 +36,10 @@
   import Carousel from './Carousel'
   import MainSearch from './MainSearch'
   import Authors from './Authors'
+  import FeaturedArticles from './FeaturedArticles'
   export default {
     name: 'AppIndex',
-    components: {Authors, MainSearch, MyCarousel, Carousel, Slogan, About}
+    components: {Authors, MainSearch, MyCarousel, Carousel, Slogan, About, FeaturedArticles}
   }
 </script>
 

@@ -1,42 +1,21 @@
 <template>
   <section class="team ">
     <div class="container">
-      <div class="author-title">
-        <h1>Featured Authors</h1>
+      <div class="article-title">
+        <h1>Featured Articles</h1>
       </div>
       <div class="img">
-        <a href='https://www.lancaster.ac.uk/people-profiles/haris-bin-pervaiz' target="_blank" title="Haris Pervaiz">
+        <a href='https://www.sciencedirect.com/science/article/abs/pii/S0167739X19320291' target="_blank" title="Evaluating IoT service composition mechanisms for the scalability of IoT systems">
           <div class="item el-col-md-4">
             <div class="hover3d">
               <div class="hover3d-child">
                 <div class="team-img">
-                  <img src="static/img/Authors/Haris Pervaiz .jpg" class="img-responsive" alt="">
+                  <img src="static/img/FeaturedArticles/IoT1.jpg" class="img-responsive" alt="">
                 </div>
                 <div class="info">
                   <div>
-                    <h6>Haris Pervaiz</h6>
-                    <span>Assistant Professor</span>
-                    <p>School of Computing and Communications, Lancaster University, UK</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="img">
-        <a href='https://www.lancaster.ac.uk/sci-tech/about-us/people/damian-arellanes-molina' target="_blank" title="Damian Arellanes">
-          <div class="item el-col-md-4">
-            <div class="hover3d">
-              <div class="hover3d-child">
-                <div class="team-img">
-                  <img src="static/img/Authors/Damian Arellanes.jpg" class="img-responsive" alt="">
-                </div>
-                <div class="info">
-                  <div>
+                    <h5>Evaluating IoT service composition mechanisms for the scalability of IoT systems</h5>
                     <h6>Damian Arellanes</h6>
-                    <span>Assistant Professor</span>
-                    <p>School of Computing Science, Lancaster University, UK</p>
                   </div>
                 </div>
               </div>
@@ -45,18 +24,40 @@
         </a>
       </div>
       <div class="img">
-        <a href='https://www.lancaster.ac.uk/people-profiles/scott-piao' target="_blank" title="Scott Piao">
+        <a href='https://ieeexplore.ieee.org/abstract/document/8831195' target="_blank" title="Workflow Variability for Autonomic IoT Systems">
           <div class="item el-col-md-4">
             <div class="hover3d">
               <div class="hover3d-child">
                 <div class="team-img">
-                  <img src="static/img/Authors/Scott Piao.jpg" class="img-responsive" alt="">
+                  <img src="static/img/FeaturedArticles/IoT2.jpg" class="img-responsive" alt="">
                 </div>
                 <div class="info">
                   <div>
-                    <h6>Scott Piao</h6>
-                    <span>Assistant Professor</span>
-                    <p>School of Computing Science, Lancaster University, UK</p>
+                    <h5>Workflow Variability for Autonomic IoT Systems</h5>
+                    <h6>Damian Arellanes</h6>
+<!--                    <span>Assistant Professor</span>-->
+<!--                    <p>School of Computing Science, Lancaster University, UK</p>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="img">
+        <a href='https://ieeexplore.ieee.org/document/8767238' target="_blank" title="Decentralized Data Flows in Algebraic Service Compositions for the Scalability of IoT Systems">
+          <div class="item el-col-md-4">
+            <div class="hover3d">
+              <div class="hover3d-child">
+                <div class="team-img">
+                  <img src="static/img/FeaturedArticles/IoT3.jpg" class="img-responsive" alt="">
+                </div>
+                <div class="info">
+                  <div>
+                    <h5>Decentralized Data Flows in Algebraic Service Compositions for the Scalability of IoT Systems</h5>
+                    <h6>Damian Arellanes</h6>
+<!--                    <span>Assistant Professor</span>-->
+<!--                    <p>School of Computing Science, Lancaster University, UK</p>-->
                   </div>
                 </div>
               </div>
@@ -70,7 +71,7 @@
 
 <script>
 export default {
-  name: 'Authors'
+  name: 'FeaturedArticles'
 }
 </script>
 
@@ -84,7 +85,7 @@ body{
   /*text-align: center;*/
   margin-top: 60px;
 }
-.author-title{
+.article-title{
   position: relative;
   font-size: 32px;
   font-weight: bold;
@@ -92,11 +93,11 @@ body{
   margin-left: -50%;
 }
 .img{
-  width: 350px;
-  height: 350px;
+  width: 375px;
+  height: 275px;
   /*background: black;*/
   display: inline-block;
-  margin: 10px;
+  margin: 7px;
   margin-top: -10px;
   /*background-size: cover;*/
   /*background-repeat: no-repeat;*/
@@ -149,31 +150,40 @@ body{
   -webkit-transition: all .4s;
   transition: all .4s;
 }
-.team .item .info h6 {
+.team .item .info h5 {
   font-size: 16px;
+  font-weight: bold;
   color: #fff;
   letter-spacing: 1px;
-  margin-bottom: 5px;
+  margin-bottom: -35px;
+  margin-right: 10px;
+  padding-bottom: 8px;
+  text-align: left;
+  /*color: #a9a9a9;*/
+}
+.team .item .info h6 {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: -35px;
+  margin-right: 10px;
+  text-align: left;
+  /*color: #a9a9a9;*/
 }
 .team .item .info span {
   font-size: 14px;
   font-style: italic;
-  /*margin-bottom: 4px;*/
-  margin-top: 12px;
+  /*margin-bottom: -30%;*/
+  margin-top: 200px;
+  /*padding-bottom: 0px;*/
+  text-align: left;
+  /*margin-left: -70%;*/
   color: #e3e2e2;
 }
 .team .item .info p {
   margin-bottom: 10px;
   color: #a9a9a9;
 }
-/*.team .item .info .icon {*/
-/*  margin: 0 10px;*/
-/*  font-size: 12px;*/
-/*  color: #eee;*/
-/*  cursor: pointer;*/
-/*}*/
-/*.pink{*/
-/*  color: deeppink;*/
-/*  font-weight: bold;*/
-/*}*/
 </style>
