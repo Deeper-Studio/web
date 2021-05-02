@@ -9,7 +9,8 @@
       </el-form-item>
       <el-form-item prop="password">
         <el-input type="password" v-model="loginForm.password"
-                  auto-complete="off" placeholder="password"></el-input>
+                  auto-complete="off" placeholder="password">
+        </el-input>
       </el-form-item>
       <el-checkbox class="login_remember" v-model="checked"
                    label-position="left"><span style="color: #505458">Remember</span></el-checkbox>
@@ -35,6 +36,20 @@
         },
         loading: false
       }
+      // // eslint-disable-next-line no-unreachable
+      // const pass_field = document.querySelector('.pass-key')
+      // const showBtn = document.querySelector('.show')
+      // showBtn.addEventListener('click', function () {
+      //   if (pass_field.type === 'password') {
+      //     pass_field.type = 'text'
+      //     showBtn.textContent = 'HIDE'
+      //     showBtn.style.color = '#3498db'
+      //   } else {
+      //     pass_field.type = 'password'
+      //     showBtn.textContent = 'SHOW'
+      //     showBtn.style.color = '#222'
+      //   }
+      // })
     },
     methods: {
       login () {

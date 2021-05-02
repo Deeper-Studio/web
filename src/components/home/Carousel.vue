@@ -1,5 +1,5 @@
 <template>
-  <el-card class="card-carousel">
+<!--  <el-card class="card-carousel">-->
   <el-carousel  class="push" :interval="4000" arrow="always">
     <el-carousel-item v-for="item in items" :key="item.id">
       <a :href=item.link target="_blank">
@@ -11,7 +11,7 @@
       </el-card>
     </el-carousel-item>
   </el-carousel>
-  </el-card>
+<!--  </el-card>-->
 </template>
 
 <style>
@@ -25,15 +25,20 @@
   }
 
   .card-carousel {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     /*margin-left: -5px;*/
     /*margin-right: 0px;*/
-    /*width: 680px;*/
-    height: 400px;
+    width: 100%;
+    height: 100%;
   }
 
   .push {
-    margin: 0 auto;
+    width: 1050px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    /*margin: 0 auto;*/
     /*margin-top: -20px;*/
     /*margin-left: -20px;*/
     /*margin-right: -20px;*/
@@ -48,8 +53,8 @@
   }
 
   .carousel_img {
-    height: 400px;
-    /*height: 100%;*/
+    /*height: 400px;*/
+    height: 100%;
     width: 100%;
     text-align: center;
   }
